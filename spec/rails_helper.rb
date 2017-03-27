@@ -5,6 +5,7 @@ ENV['RAILS_ENV'] ||= 'test'
   require 'spec_helper'
   require 'rspec/rails'
   require 'capybara/rspec'
+  require 'capybara/webkit/matchers'
   require 'simple_bdd'
   require 'shoulda/matchers'
   Capybara.javascript_driver = :webkit
