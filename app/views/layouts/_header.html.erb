@@ -1,6 +1,10 @@
 <div>
 		<%= link_to 'Sign in', new_hacker_session_path %>
 		<%= link_to 'Sign up', new_hacker_registration_path %>
+		<%= link_to 'Sign in as admin', new_admin_session_path %>
+		<% if admin_signed_in? %>
+			<%= link_to 'View Hacker List', admin_hacker_list_path %>
+		<% end %>
 	<div>
 		<p class="notice">
 			<%= notice %>
